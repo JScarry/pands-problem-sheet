@@ -1,10 +1,11 @@
 #Lab3.1 extra questions.
 #Author: Jarlath
 
-# Q6. Why does this expression cause an error? How can you fix it? 
+Q6. Why does this expression cause an error? How can you fix it? 
 #message = 'I have eaten ' + 99 + ' burritos.'
 #print (message)
-# this did not work because 99 is an int. Only a str can be added to a str with the operator + +
+
+This did not work because 99 is an int. Only a str can be added to a str with the operator + +
 
 message = 'I have eaten ' + str(99) + ' burritos.'
 print (message)
