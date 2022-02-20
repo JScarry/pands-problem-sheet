@@ -10,10 +10,10 @@ def collatz(num):  #defining collatz function (user drfined function) https://ww
                         #keep repeating if or else steps below while the answer is greater than 1
         print(num) #print out the number at each step
 
-        if(num) % 2 == 0: #if number is even.
+        if(num) % 2 == 0: #if number is even,
             num = int(num / 2) #devide number by 2
         
-        else: #otherwise (if number is odd).. 
+        else: #otherwise (if number is odd), 
             num = int((3 * num) + 1) #multiply number by 3 and add 1
 
     else: #otherwise (if number is now equal to 1)..
