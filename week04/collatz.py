@@ -1,41 +1,28 @@
-#collatz
-#author: Jarlath Scarry
+#Weekly task 4
+#Author: Jarlath Scarry
 
-#Write a program that asks the user to input any positive integer and outputs the successive 
-#values of the following calculation.
-#At each step calculate the next value by taking the current value and, if it is even, 
-#divide it by two, but if it is odd, multiply it by three and add one.
-#Have the program end if the current value is one.
-#$ python collatz.py
-#Please enter a positive integer: 10
-#10 5 16 8 4 2 1
+#I worked with code from the following link
+#https://www.webucator.com/article/collatz-conjecture-in-python/
 
+def collatz(num):  #defining collatz function (user drfined function) https://www.w3schools.com/python/python_functions.asp
+                   
+    while(num) > 1: #while loop (https://realpython.com/lessons/intro-while-loops-python/) 
+                        #keep repeating if or else steps below while the answer is greater than 1
+        print(num) #print out the number at each step
 
-any = 
-#while val != "q":
-if (any% 2) == 0:
-    #print ("{} is an even number".format(any))
+        if(num) % 2 == 0: #if number is even.
+            num = int(num / 2) #devide number by 2
+        
+        else: #otherwise (if number is odd).. 
+            num = int((3 * num) + 1) #multiply number by 3 and add 1
 
-else:
-    #print("{} is an odd number".format(any))
-    #val = input ("(q to quit):")
-#print ("Goodbye")
-
-#https://stackoverflow.com/questions/61659143/how-do-i-divide-a-number-by-two-multiple-times/61659290
-num = int(input("Please input any positive integer (press q to quit): (q to quit)"))
-if num > 100 or num < 1:              # 2
-    print("Error!")                   # 3
-else:                                 # 4
-    times = 0                         # 5
-    while num >= 2:                   # 6
-        num /= 2                      # 7
-        times += 1                    # 8
-    print(times)                      # 9
-
-
-#number = float(input("enter a number:\n"))
-#absoluteValue = (abs(number))  #equating the variable number to the absolute value of number
-#print ("the absolute value of {} is {}".format(number,absoluteValue))
-
-
-print ('quit')
+    else: #otherwise (if number is now equal to 1)..
+        print(num) #print the number (this will print 1 since, while the number 
+                    #is not equal to 1 the if or else step will still be executed)
+        print('Done!') #Done! is printed after last step (when number is equal to 1)
+                        #collatz function is now defined as the code between line 6 and 19. 
+ 
+def main(): #define the main function. This is the first piece of code to be run
+    num = int(input('Input an integer: ')) #request user to input an integer and read it in as class integer
+    collatz(num) #run the collatz function on the number that was input
+main() #end the main function
