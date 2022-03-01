@@ -54,4 +54,17 @@ https://www.programiz.com/python-programming/datetime
 https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
 
 Week 6: 
+Q: Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
+sqrt.py added
+
+Square Root of a Number using Newton's Method 
+Python 
+The Last Minute Professor
+#https://www.youtube.com/watch?v=xdlIFw5EM4w
+program to calculate square root:
+
+read in input as a float
+define a function to estimate a square root. run a while loop to repeat the calculations.
+call the function
+print the answer
