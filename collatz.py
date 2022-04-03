@@ -29,4 +29,5 @@ def main(): #define the main function. This is the first piece of code to be run
 
 main() #call the main function
 print(*numList, sep=" ") # print the list. *unpacks the list and sep=" " seperates items with a blank space.
-#print('Done!')
+#print('Done!') #removed the print done at the end as it is not required for this weekly task.
+ 

@@ -9,7 +9,7 @@ print ('Hello {}\n Please answer the following questions and we\
 
 weight = float(input ('What is your weight(KG)?:'))
 height = float(input ('What is your height(CM)?:'))
-# used float instead of int incase not whole numbers entered,eg weitht 82.5kg
+# used float instead of int incase not whole numbers entered,eg weight 82.5kg
 
 print ('Your weight is {}KG and height is {}CM.\n'.format(weight, height))
 
